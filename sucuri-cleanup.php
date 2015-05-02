@@ -3,7 +3,7 @@
 Plugin Name: Sucuri Scanner custom settings
 Description: Hide Firewall menu and Plugin advertisements, relocate datastore path.
 Version: 2.0.0
-Author: Viktor Szépe, Wojtek Szałkiewicz
+Author: Viktor Szépe
 License: GNU General Public License (GPL) version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/szepeviktor/sucuri-cleanup
