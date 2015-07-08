@@ -13,6 +13,11 @@ define( 'O1_SUCURI_USER', 'your-username' );
 The WAF menu and tab are not useful for users without WAF subscription.
 "Website Firewall protection" postbox on Hardening tab should be also hidden.
 
+### Prevent DNS queries on each page load
+
+Sucuri plugin [looks up](https://plugins.trac.wordpress.org/changeset/1194834)
+each visitor's IP address. Defining `NOT_USING_CLOUDPROXY` prevents this behavior.
+
 ### Hide Sucuri ads
 
 Ads in the Sucuri Scanner plugin could be hidden manually.
