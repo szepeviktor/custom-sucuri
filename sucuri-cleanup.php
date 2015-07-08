@@ -1,9 +1,10 @@
 <?php
 /*
 Plugin Name: Sucuri Scanner custom settings
-Description: Hide Firewall related UI elements, relocate datastore path and more.
-Version: 2.3.0
+Description: Hide firewall related UI elements, relocate datastore path and more.
+Version: 2.3.1
 Author: Viktor Szépe
+Author URI: https://github.com/szepeviktor?tab=activity
 License: GNU General Public License (GPL) version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/szepeviktor/sucuri-cleanup
@@ -20,7 +21,9 @@ final class O1_sucuri_settings {
         add_action( 'admin_enqueue_scripts', array( $this, 'hide_waf_postbox' ), 20 );
 
         add_filter( 'option_' . 'sucuriscan_ads_visibility', array( $this, 'option_ads_visibility' ), 9999 );
+        add_filter( 'default_option_' . 'sucuriscan_ads_visibility', array( $this, 'option_ads_visibility' ), 9999 );
         add_filter( 'option_' . 'sucuriscan_datastore_path', array( $this, 'option_datastore_path' ), 9999 );
+        add_filter( 'default_option_' . 'sucuriscan_datastore_path', array( $this, 'option_datastore_path' ), 9999 );
     }
 
     /**

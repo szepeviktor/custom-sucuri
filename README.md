@@ -1,5 +1,7 @@
 # Sucuri Scanner custom settings
 
+Custom settings for [Sucuri Scanner](https://wordpress.org/plugins/sucuri-scanner/) plugin.
+
 ### Restrict the admin interface to a specific user
 
 Copy this to your wp-config.php
