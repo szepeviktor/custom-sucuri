@@ -19,7 +19,7 @@ The WAF menu and tab are not useful for users without WAF subscription.
 
 ### Prevent DNS queries on each page load
 
-Sucuri plugin [looks up](https://plugins.trac.wordpress.org/changeset/1194834)
+Sucuri Scanner plugin [looks up](https://plugins.trac.wordpress.org/changeset/1194834)
 each visitor's IP address. Defining `NOT_USING_CLOUDPROXY` prevents this behavior.
 
 ### Hide Sucuri ads

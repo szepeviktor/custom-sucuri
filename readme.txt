@@ -21,7 +21,7 @@ The author has no association with Sucuri LLC.
 * Hide Sucuri ads
 * Set data store path.
 
-For details please see [the GitHub repository](https://github.com/szepeviktor/sucuri-cleanup).
+For details please see [the GitHub repository](https://github.com/szepeviktor/custom-sucuri).
 
 = How to restrict the admin interface to a specific user? =
 
@@ -31,13 +31,13 @@ Copy this to your wp-config.php
 
 = Links =
 
-Development of this plugin goes on on [GitHub](https://github.com/szepeviktor/sucuri-cleanup).
+Development of this plugin goes on on [GitHub](https://github.com/szepeviktor/custom-sucuri).
 
 == Installation ==
 
 This section describes how to install the plugin and get it working.
 
-1. Upload `sucuri-cleanup.php` to the `/wp-content/plugins/` directory
+1. Upload `custom-sucuri.php` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
@@ -55,4 +55,4 @@ Copy this to your wp-config.php
 
 = 2.3.0 =
 * Up to version 2.3.0 this plugin was only available on
-  [GitHub](https://github.com/szepeviktor/sucuri-cleanup/commits/master).
+  [GitHub](https://github.com/szepeviktor/custom-sucuri/commits/master).

@@ -7,11 +7,11 @@ Author: Viktor Szépe
 Author URI: https://github.com/szepeviktor?tab=activity
 License: GNU General Public License (GPL) version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-GitHub Plugin URI: https://github.com/szepeviktor/sucuri-cleanup
+GitHub Plugin URI: https://github.com/szepeviktor/custom-sucuri
 Options: O1_SUCURI_USER
 */
 
-final class O1_sucuri_cleanup {
+final class O1_sucuri_custom {
 
     public function __construct() {
 
@@ -91,4 +91,4 @@ final class O1_sucuri_cleanup {
     }
 }
 
-new O1_sucuri_cleanup();
+new O1_sucuri_custom();
