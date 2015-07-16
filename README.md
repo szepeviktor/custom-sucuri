@@ -1,6 +1,8 @@
-# Sucuri Scanner custom settings
+# Custom settings for Sucuri Scanner
 
 Custom settings for [Sucuri Scanner](https://wordpress.org/plugins/sucuri-scanner/) plugin.
+
+The author has no association with Sucuri LLC.
 
 ### Restrict the admin interface to a specific user
 

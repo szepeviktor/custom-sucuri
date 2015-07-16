@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Sucuri Scanner custom settings
+Plugin Name: Custom settings for Sucuri Scanner
 Description: Hide firewall related UI elements, relocate datastore path and more.
 Version: 2.3.1
 Author: Viktor Szépe
@@ -11,7 +11,7 @@ GitHub Plugin URI: https://github.com/szepeviktor/sucuri-cleanup
 Options: O1_SUCURI_USER
 */
 
-final class O1_sucuri_settings {
+final class O1_sucuri_cleanup {
 
     public function __construct() {
 
@@ -91,4 +91,4 @@ final class O1_sucuri_settings {
     }
 }
 
-new O1_sucuri_settings();
+new O1_sucuri_cleanup();

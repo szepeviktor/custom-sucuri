@@ -1,4 +1,4 @@
-=== Sucuri Scanner custom settings ===
+=== Custom settings for Sucuri Scanner ===
 Contributors: szepe.viktor
 Donate link: https://szepe.net/wp-donate/
 Tags: sucuri, sucuri scanner, malware, security, firewall, scan, virus
@@ -12,6 +12,8 @@ Hide firewall related UI elements, relocate datastore path and more.
 == Description ==
 
 Custom settings for [Sucuri Scanner](https://wordpress.org/plugins/sucuri-scanner/) plugin.
+
+The author has no association with Sucuri LLC.
 
 * Restrict the admin interface to a specific user
 * Hide Sucuri WAF (web application firewall) related UI elements
@@ -52,5 +54,5 @@ Copy this to your wp-config.php
 * Initial release on WordPress.org.
 
 = 2.3.0 =
-* Up to version 2.3.0 this plugin was only available from
+* Up to version 2.3.0 this plugin was only available on
   [GitHub](https://github.com/szepeviktor/sucuri-cleanup/commits/master).
