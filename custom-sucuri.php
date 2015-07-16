@@ -41,7 +41,7 @@ final class O1_sucuri_custom {
         }
 
         // User restriction.
-        if ( is_user_logged_in() && defined( 'O1_SUCURI_USER' ) ) {
+        if ( defined( 'O1_SUCURI_USER' ) && is_user_logged_in() ) {
             $current_user = wp_get_current_user();
 
             if ( O1_SUCURI_USER !== $current_user->user_login ) {
