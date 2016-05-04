@@ -2,9 +2,9 @@
 /*
 Plugin Name: Custom settings for Sucuri Scanner
 Description: Hide firewall related UI elements, relocate datastore path and more.
-Version: 2.3.1
+Version: 2.3.2
 Author: Viktor Szépe
-Author URI: https://github.com/szepeviktor?tab=activity
+Author URI: https://github.com/szepeviktor
 License: GNU General Public License (GPL) version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/szepeviktor/custom-sucuri
@@ -57,8 +57,8 @@ final class O1_sucuri_custom {
 
         global $sucuriscan_pages;
 
-        unset( $sucuriscan_pages['sucuriscan_monitoring'] );
-        // Would remove only the admin menu: remove_submenu_page( 'sucuriscan', 'sucuriscan_monitoring' );
+        unset( $sucuriscan_pages['sucuriscan_firewall'] );
+        // Would remove only the admin menu: remove_submenu_page( 'sucuriscan', 'sucuriscan_firewall' );
     }
 
     /**
