@@ -14,20 +14,20 @@ define( 'O1_SUCURI_USER', 'your-username' );
 
 ### Hide Sucuri WAF related UI elements
 
-The WAF menu and tab are not useful for users without WAF subscription.
+The WAF menu and tab are not useful for users without Sucuri WAF subscription.
 "Website Firewall protection" postbox on Hardening tab should be also hidden.
 
 ### Prevent DNS queries on each page load
 
 Sucuri Scanner plugin [looks up](https://plugins.trac.wordpress.org/changeset/1194834)
-each visitor's IP address. Defining `NOT_USING_CLOUDPROXY` prevents this behavior.
+each visitor's IP address. This plugin defines `NOT_USING_CLOUDPROXY` to prevent this behavior.
 
 ### Hide Sucuri ads
 
 Ads in the Sucuri Scanner plugin could be hidden manually.
-This plugin hides the ads.
+This plugin hides them.
 
-### Set data store path.
+### Set data store path
 
 Sucuri Scanner's default datastore path is in the uploads directory.
 This plugin sets the datastore path to `wp-content/sucuri`.
