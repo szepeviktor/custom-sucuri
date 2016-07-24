@@ -3,8 +3,8 @@ Contributors: szepe.viktor
 Donate link: https://szepe.net/wp-donate/
 Tags: sucuri, sucuri scanner, malware, security, firewall, scan, virus
 Requires at least: 4.0
-Tested up to: 4.4.2
-Stable tag: 2.3.2
+Tested up to: 4.6.0
+Stable tag: 2.4.0
 License: GPLv2
 
 Hide firewall related UI elements, relocate datastore path and more.
@@ -49,6 +49,9 @@ Copy this to your wp-config.php
 `define( 'O1_SUCURI_USER', 'your-username' );`
 
 == Changelog ==
+
+= 2.4.0 =
+* Update features for latest Sucuri Scanner.
 
 = 2.3.2 =
 * Follow Sucuri Scan's rename of firewall tab.

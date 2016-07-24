@@ -2,7 +2,7 @@
 /*
 Plugin Name: Custom settings for Sucuri Scanner
 Description: Hide firewall related UI elements, relocate datastore path and more.
-Version: 2.3.2
+Version: 2.4.0
 Author: Viktor Szépe
 Author URI: https://github.com/szepeviktor
 License: GNU General Public License (GPL) version 2
@@ -10,6 +10,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/szepeviktor/custom-sucuri
 Options: O1_SUCURI_USER
 */
+
+// TODO There are constants for these in sucuri-scanner.php
+
 
 final class O1_sucuri_custom {
 
@@ -22,8 +25,15 @@ final class O1_sucuri_custom {
 
         add_filter( 'option_' . 'sucuriscan_ads_visibility', array( $this, 'option_ads_visibility' ), 9999 );
         add_filter( 'default_option_' . 'sucuriscan_ads_visibility', array( $this, 'option_ads_visibility' ), 9999 );
+        if ( ! defined( 'SUCURISCAN_HIDE_ADS' ) ) {
+            define( 'SUCURISCAN_HIDE_ADS', true );
+        }
+
         add_filter( 'option_' . 'sucuriscan_datastore_path', array( $this, 'option_datastore_path' ), 9999 );
         add_filter( 'default_option_' . 'sucuriscan_datastore_path', array( $this, 'option_datastore_path' ), 9999 );
+        if ( ! defined( 'SUCURI_DATA_STORAGE' ) ) {
+            define( 'SUCURI_DATA_STORAGE', WP_CONTENT_DIR . '/sucuri' );
+        }
     }
 
     /**
@@ -71,6 +81,7 @@ final class O1_sucuri_custom {
         }
 
         $style = '.sucuri-security_page_sucuriscan_hardening #poststuff .postbox:nth-of-type(2) {display:none !important;}';
+        $style .= '.sucuri-security_page_sucuriscan_hardening #sucuriscan-hardening .postbox:nth-of-type(1) {display:none !important;}';
         wp_add_inline_style( 'wp-admin', $style );
     }
 
